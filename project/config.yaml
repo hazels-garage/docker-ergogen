@@ -29,34 +29,11 @@ pcbs:
   simple_split:
     footprints:
       keys:
-        what: choc
+        what: placeholder
         where: true
-        params:
-          from: GND
-          to: "{{name}}"
-          reverse: true
-          keycaps: true
       mcu:
-        what: promicro
+        what: placeholder
         where:
           - ref: matrix_inner_home
             shift: [1U, 0.5U]
             rotate: -90
-        params:
-          P7: matrix_pinky_top
-          P18: matrix_ring_top
-          P19: matrix_middle_top
-          P20: matrix_index_top
-          P21: matrix_inner_top
-          P15: matrix_pinky_home
-          P14: matrix_ring_home
-          P16: matrix_middle_home
-          P10: matrix_index_home
-          P1: matrix_inner_home
-          P2: matrix_pinky_bottom
-          P3: matrix_ring_bottom
-          P4: matrix_middle_bottom
-          P5: matrix_index_bottom
-          P6: matrix_inner_bottom
-          P8: thumb_tucky
-          P9: thumb_reachy

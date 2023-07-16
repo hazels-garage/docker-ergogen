@@ -2,14 +2,14 @@ version: "3.7"
 
 services:
   ergogen:
-    user: "${UID}:${GID}"
+    user: $USERID:$GROUPID
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - type: bind
-        source: ./ergogen.yml
-        target: /app/ergogen.yml
+        source: ./project
+        target: /app/project
       - type: bind
-        source: ./output
-        target: /app/output
+        source: ./build
+        target: /app/build

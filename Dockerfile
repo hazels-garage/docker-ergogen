@@ -6,4 +6,4 @@ RUN yarn install
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-CMD yarn listen
+CMD nodemon --exec "ergogen /app/project -o /app/build" /app/project/config.yaml

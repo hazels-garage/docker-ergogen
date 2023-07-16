@@ -4,13 +4,13 @@
     "description": "ergogen keyboard template",
     "main": "index.js",
     "scripts": {
-        "listen": "nodemon --exec 'ergogen -d /app/ergogen.yml -o /app/output' /app/ergogen.yml"
+        "listen": "nodemon --exec 'ergogen -d /app/project -o /app/build' /app/project/config.yaml"
         
     },
     "author": "jasonhazel",
     "license": "ISC",
     "dependencies": {
-        "ergogen": "4.0.4",
+        "ergogen": "^4.0.4",
         "nodemon": "^3.0.1"
     }
 }
