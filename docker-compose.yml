@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  ergogen:
+    user: "${UID}:${GID}"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./ergogen.yml
+        target: /app/ergogen.yml
+      - type: bind
+        source: ./output
+        target: /app/output

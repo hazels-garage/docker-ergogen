@@ -1,0 +1,16 @@
+{
+    "name": "jasonhazel-ergogen-template",
+    "version": "0.0.1",
+    "description": "ergogen keyboard template",
+    "main": "index.js",
+    "scripts": {
+        "listen": "nodemon --exec 'ergogen -d /app/ergogen.yml -o /app/output' /app/ergogen.yml"
+        
+    },
+    "author": "jasonhazel",
+    "license": "ISC",
+    "dependencies": {
+        "ergogen": "4.0.4",
+        "nodemon": "^3.0.1"
+    }
+}
