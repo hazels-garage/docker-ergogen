@@ -8,8 +8,11 @@ services:
       dockerfile: Dockerfile
     volumes:
       - type: bind
-        source: ./project
-        target: /app/project
+        source: ./footprints
+        target: /app/src/footprints
+      - type: bind
+        source: ./config.yaml
+        target: /app/src/config.yaml
       - type: bind
         source: ./build
         target: /app/build

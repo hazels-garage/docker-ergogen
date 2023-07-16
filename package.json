@@ -3,9 +3,8 @@
     "version": "0.0.1",
     "description": "ergogen keyboard template",
     "main": "index.js",
-    "scripts": {
-        "listen": "nodemon --exec 'ergogen -d /app/project -o /app/build' /app/project/config.yaml"
-        
+    "scripts": { 
+        "start": "USERID=$(id -u) GROUPID=$(id -g) docker compose up"
     },
     "author": "jasonhazel",
     "license": "ISC",
